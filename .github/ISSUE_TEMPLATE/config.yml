@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 Live wiki
+    url: https://monomyth.aureus.me
+    about: Browse the deployed wiki. If you hit a bug on the site, come back and open a Site Bug issue.
