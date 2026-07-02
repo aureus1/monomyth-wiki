@@ -22,12 +22,6 @@ assignees: []
 > 5. **Paste the JSON snippet** into the "Calibration JSON snippet" section of
 >    this issue (paste it as text inside a code block).
 >
-> We need the JSON snippet so we can drop it straight into
-> `versions/<ver>/out/map_calibration.json`. **Screenshots alone will not be
-> accepted** — a marked-up image still has to be re-measured by hand, which is
-> exactly the error-prone step the edit mode eliminates. If the edit mode /
-> JSON snippet isn't available for the map in question, say so in "Further
-> details" and fall back to a marked-up screenshot, but lead with the JSON.
 
 ## Level / map page
 
