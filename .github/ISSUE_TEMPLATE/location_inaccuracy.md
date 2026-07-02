@@ -10,20 +10,24 @@ assignees: []
 >
 > Map pin positions are projected from extracted game data and then
 > hand-calibrated. Calibration isn't perfect, so pins can be off. To fix a pin
-> we need to know **exactly** where it should be.
+> we need to know **exactly** where it should be — as a calibration JSON
+> snippet, not a screenshot.
 >
 > **Please do the following before filling out the rest of this issue:**
 >
 > 1. Open the level map page on the wiki that has the wrong pin.
-> 2. Take a **screenshot of the map as currently shown** (with the wrong pin
->    visible).
-> 3. **Mark up the screenshot** — draw a clear marker (an ✖, a circle, an
->    arrow, etc.) at the **correct** location where the pin should be.
-> 4. **Attach the marked-up image** to this issue (drag it into the box below
->    or paste it).
+> 2. Click the **✏️ Edit pin positions** button above the map.
+> 3. **Drag the wrong pin(s)** to their correct location(s) on the map.
+> 4. Below the map, a **Calibration JSON** snippet appears. Click **Copy**.
+> 5. **Paste the JSON snippet** into the "Calibration JSON snippet" section of
+>    this issue (paste it as text inside a code block).
 >
-> Without an attached marked-up screenshot we can't calibrate the fix, and the
-> issue may be closed.
+> We need the JSON snippet so we can drop it straight into
+> `versions/<ver>/out/map_calibration.json`. **Screenshots alone will not be
+> accepted** — a marked-up image still has to be re-measured by hand, which is
+> exactly the error-prone step the edit mode eliminates. If the edit mode /
+> JSON snippet isn't available for the map in question, say so in "Further
+> details" and fall back to a marked-up screenshot, but lead with the JSON.
 
 ## Level / map page
 
@@ -43,13 +47,27 @@ Name the item, label, or pin that's misplaced (e.g. "the Echo Stone pin",
 - [ ] Pin exists but the item doesn't (phantom pin)
 - [ ] Other (describe below)
 
-## Marked-up screenshot
+## Calibration JSON snippet
 
-**Attach the marked-up screenshot here.** Drag the image into this issue body
-or paste it. The image should show the current map with a clear mark at the
-**correct** location.
+**Paste the Calibration JSON snippet from the wiki's edit mode here.** Put it
+inside a code block (three backticks). It should look something like:
 
-> ![Attach marked-up map screenshot here](https://placehold.co/600x400?text=Drag+or+paste+your+marked-up+map+screenshot)
+```json
+{
+  "Level_Tier01C": [
+    {
+      "worldX": -74164.67,
+      "worldY": -6602.948,
+      "mapXPercent": 75.30,
+      "mapYPercent": 9.20,
+      "note": "Armor_MinersShirt — drag-calibrated"
+    }
+  ]
+}
+```
+
+> If the map's edit mode produced no snippet (e.g. no `levelId` on the overlay),
+> say so here and attach a marked-up screenshot as a fallback.
 
 ## Further details
 
