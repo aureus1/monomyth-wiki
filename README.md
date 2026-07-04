@@ -1,7 +1,7 @@
 # Monomyth Wiki
 
-The community wiki for **Monomyth** — the first-person fantasy RPG by
-[Miga Games](https://store.steampowered.com/app/1094930/Monomyth/), built on
+The wiki-style database for **Monomyth** — the first-person fantasy RPG by
+[Rat Tower](https://store.steampowered.com/app/908360/Monomyth/), built on
 Unreal Engine 4.27 (`ProjectAriath`).
 
 This repository is the public home for the wiki: it hosts the issue tracker for
